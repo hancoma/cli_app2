@@ -54,7 +54,8 @@ var app = {
     },
 
     onmain : function() {
-
+var ref = cordova.InAppBrowser.open('https://console-mobile.cloudbric.com', '_blank', 'location=no');
+   
          var reg_id=device.uuid;
        // 기기 번호 검출 
           console.log('Received Event: ' + reg_id);
@@ -84,7 +85,6 @@ push.on('registration', function(data) {
     console.log(data.registrationId);
    // alert(data.registrationId);
     json_call(data.registrationId);
-   var ref = cordova.InAppBrowser.open('https://console-mobile.cloudbric.com', '_blank', 'location=no');
    
 });
 
