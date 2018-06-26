@@ -1,0 +1,8 @@
+.settings_content_main_value { width: 300px }
+.settings_content .settings_content_main .settings_content_main_table > .vertical_top { vertical-align: top }
+.ddos_title { float: left }
+.ddos_value { float: right }
+.ddos_text { float: left; max-width: 500px; word-break: break-all }
+.control_list { margin: 0; padding: 0; width: 280px }
+.control_limit { margin-bottom: 10px }
+.control_label { display: inline-block; margin: 0; margin-right: 10px; font-weight: normal; line-height: 30px }

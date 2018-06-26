@@ -1,0 +1,73 @@
+/*font-face*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+/*@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}*/
+@font-face {
+  font-family: NanumGothic;
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+
+/*font-size*/
+@default-font-size : 13px;
+
+/*color system */
+@white : #fff;
+@white-gray : #f5f5f5;
+@light-gray : #cdcdcd;
+@gray: #999;
+@semi-light-gray : #ebebeb;
+@semi-dark-gray : #666;
+@dark-gray : #262626;
+//blue
+@blue: #2da2db;
+@dark-blue : #288dbf;
+@light-blue : #93cfe5;
+@semi-light-blue : #ecf0f5;
+@gray-blue : #7f94a0;
+@light-gray-blue : #d7e3ea;
+//others
+@red : #e74c3c;
+@light-red : #ec7063;
+@green : #00a65a;
+@light-green : #7cdda7;
+@light-yellow: #ffead0;
+@yellow: #eea236;
+@pink : #eaa9a9;
+
+//domain group colors
+@group-colors : #da5656, #d5be40, #6bc95f, #4c85c6, #d98451, #af54cd;
+
+/*Mixin*/
+.border-radius (@radius: 3px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.box-shadow (@shadow: none) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+.animation-transition (none) {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.animation-transition (@border, @color) {
+  -webkit-transition: @border, @color;
+  -o-transition: @border, @color;
+  transition: @border, @color;
+}

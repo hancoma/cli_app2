@@ -1,0 +1,3 @@
+.reg_info_table tr { background-color: #ECF0F5; border-bottom: #FFF solid 1px }
+.reg_info_table td { padding: 8px 10px; word-break: break-all; border-right: #FFF solid 1px }
+.reg_info_table td:last-of-type { border-right: none }

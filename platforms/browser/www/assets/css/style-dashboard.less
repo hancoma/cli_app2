@@ -1,0 +1,386 @@
+/*Page Loading*/
+#loading {
+	display:block; 
+}
+
+/*Layout*/
+.content_wrapper {padding: 20px 0 50px 0;}
+.datepicker_wrap {padding-bottom:30px;}
+.content_center { position: relative }
+
+#download_pdf, #download_excel {width:150px;}
+
+#dashboard {
+	.btn-hover {cursor:pointer;}
+
+	/*TAB*/
+	li {
+		&:not(.active) {
+			> [data-toggle="tab"] { opacity: 0.5; }
+		}
+	}
+
+	/* Table hover color */
+	.table-striped {
+		> tbody {
+			> tr {
+				&.map_active, &:hover {
+					background-color : @light-gray !important;
+				}
+			}
+		}
+	}
+
+	/*
+	 * Title, Sub Text
+	 */
+	.title_text  {margin-bottom:3px;}
+
+	/*
+	 * Graph TEXT
+	 */
+	text { 
+		font-family: Roboto, NotoSansJapanese, NanumGothic, FontAwesome !important;
+	}
+	#overview_graph1 .dxc-val-axis:nth-child(2) text,
+	#overview_graph2 .dxc-val-axis:nth-child(2) text { fill:@blue !important; }
+	#overview_graph1 .dxc-val-axis:nth-child(3) text,
+	#overview_graph2 .dxc-val-axis:nth-child(3) text { fill:@red !important; }
+	
+	/*OVERVIEW*/
+	#dash_overview {
+		margin-bottom:30px;
+		
+		.overview_nodata {
+			position: absolute;
+			left: 277px;
+			top: 135px;
+			display: none;
+		}
+		
+		.nav-tabs { 
+			width:350px; 
+			
+			li, li a {
+				display:block; 
+				height:160px;
+				color:@semi-dark-gray;
+				text-align:center;
+				overflow:hidden;
+				clear:both; 
+			}
+			
+			p {
+				&:first-child {
+					padding-bottom:15px;
+					font-size:15px; 
+					font-weight:bold;
+				}
+			}
+			
+			.inline_left {
+				width:50%;
+				.overview_num { border-right:1px solid @light-gray; }
+			}
+			.inline_right { width:50%;}
+			
+			.overview_num {
+				font-size:2.5rem; 
+				font-weight: normal;
+			}
+		}
+		
+		.nav-tabs-custom {
+			.nav-tabs {
+				li {border:0 !important;}
+			}
+		}
+		
+		/* Graph */
+		.pie_graph_info table tr:hover, 
+		.dash_map_info tbody tr:hover {background:@light-gray !important;}
+		#overview_graph1, #overview_graph2 { 
+			width:605px; 
+			height:300px;
+		}
+		
+		#overview_tab1:not(.active) > [data-toggle="tab"] {
+			border-bottom:1px solid @light-gray;
+			border-right:1px solid @light-gray;
+		}
+		#overview_tab2:not(.active) > [data-toggle="tab"] {
+			border-top:1px solid #c3c3c3;
+			border-right:1px solid #c3c3c3;
+		}
+		
+		.tab-content { 
+			width:625px; 
+			position: relative;
+		}
+	}
+	
+	/*DASH TABS*/
+	#dash_tabs {
+		.nav-tabs {
+			li {
+				width:50%; 
+				height:50px;
+				text-align:center;
+				
+				&.active {
+					a {font-weight: normal;}
+				}
+			}
+		}
+		
+		a { 
+			color: @semi-dark-gray; 
+			font-size:16px; 
+			padding:14px 15px;
+		}
+		
+		.tab-content { 
+			padding: 25px 19px 19px 19px; 
+			
+			.tab-pane {
+				> div { 
+					padding-bottom:20px; 
+					
+					&:not(:first-child) {
+						> div { border:1px solid @light-gray; }
+					}
+				}
+			}
+		}
+	}
+	
+	/* Map */
+	.dash_map {overflow:hidden;}
+	.dxm-control-buttons {stroke-width: 2px !important;}
+	.dash_map_vector {
+		width:560px; 
+		height:350px;
+		float:left;
+	}
+	.dash_map_info {
+		width:380px; 
+		height:350px;
+		float:right; 
+		border :1px solid @light-gray;
+		border-left: 0;
+		overflow:hidden;
+		
+		.dash_map_info_top {
+			height: 93px;
+			padding: 15px 10px 0 10px;
+		}
+		
+		.sub_text {
+			text-align:center; 
+			color: @red; 
+			margin: 0;
+		}
+		
+		.round_tabs {
+			width:200px;
+			
+			li {
+				float:left; 
+				width:50%;
+				padding-top: 6px;
+			}
+		}
+		
+		.btn { 
+			width:80px; 
+			padding: 0;
+		}
+		
+		table {
+			display:block; 
+			overflow:hidden; 
+			border-top:1px solid @light-gray;
+			
+			tbody, tbody tr {
+				display:block;
+			}
+			
+			td {
+				display:inline-block; 
+				padding:13px 8px !important;
+				border-top:0 !important;
+				
+				&:nth-child(2) {font-size:1.1rem;}
+			}
+		}
+		
+		.dash_map_order_num {font-size: 0.95rem;}
+		.label {
+			position:relative;
+			top:-2px;
+			left: 3px;
+			width:96px;
+		}
+		
+		span[pre-add='true'], .btn_map_action[pre-add='true'] {text-decoration: line-through;}
+		.btn_map_action[pre-add='true']:hover {text-decoration: none;}
+	}
+	#dash_attack_map .dash_map_info .round_tabs li.active { background-color: @light-red; }
+	#dash_visit_map .dash_map_info .round_tabs li.active { background-color: @blue;  width:100%;}
+
+	
+	/*Attack IP Table*/
+	#dash_attack_ip_table {
+		td {
+			&:first-child {width:20px;}
+			&:nth-child(2) {width:254px; }
+		}
+	}
+	
+	/*Attack Country Table*/
+	#dash_attack_country_table {
+		td {
+			&:first-child {width:20px;}
+			&:nth-child(2) {width:254px;}
+		}
+	}
+	/*Visit Country Table*/
+	#dash_visit_map_table{
+		td {
+			&:first-child {width:20px;}
+			&:nth-child(2) {width:254px;}
+		}
+		
+		.visit_map_num {
+			width : 80px;
+			height : 25px;
+			font-size : 12px;
+			color: #666;
+			text-align : center;
+			background-color: @white-gray;
+			border: 1px solid @light-gray;
+			border-radius: 3px;
+			padding-top:4px;
+		}
+	}
+
+	.btn_map_center {
+		display: inline-block;
+		margin-left: -55px;
+		margin-top: 10px;
+	}
+	
+	/* Pie Chart */
+	.pie_graph { 
+		display:inline-block; 
+	}
+	#dash_attack {
+		.pie_graph { width:49%; position: relative;}
+	}
+
+	.pie_graph_nodata {
+		position: absolute;
+		top: 160px;
+		left: 205px;
+		display: none;
+	}
+	.pie_graph_wrapper {overflow:hidden;}
+	
+	#dash_purpose {
+		div {
+			&:not(:last-child) {border-bottom:0px !important;}
+		}
+		
+		#dash_purpose_graph {
+			height:300px;
+			padding:30px 10px; 
+		}
+	}
+	
+	#dash_urls {
+		div {
+			&:not(:last-child) {border-bottom:0px !important;}
+		}
+		
+		.table {width:459px;}
+		#dash_urls_graph {
+			height:300px;
+			padding:30px 10px; 
+		}
+	}
+	.pie_graph_info {
+		border-top:0 !important;
+		table {
+			overflow:hidden;
+			font-size:1.1rem;
+			display:block;
+			
+			tbody, tr {display:block;}
+			td {
+				padding:8px; 
+				border-top:0;
+				svg {display:block;}
+				
+				&:nth-child(1) { width: 47px; }
+				&:nth-child(2) { width: 270px; }
+				&:nth-child(3) { width: 96px; }
+				&:nth-child(4) { width: 27px; }
+			}
+		}
+		
+		.btn_extra_url {width:80px;}
+	}
+	
+	/*Accumulated Bandwidth*/
+	#dash_bandwidth_graph {
+		width: 460px; 
+		padding:10px;
+		
+		> svg {margin:0 auto;}
+	}
+
+	/*Traffic By Day*/
+	#dash_traffic_day {
+		position: relative;
+
+		#dash_traffic_day_graph {
+			width: 460px; 
+			padding:10px;
+		}
+		
+		.traffic_day_nodata {
+			position: absolute;
+			left: 203px;
+			top: 155px;
+			display: none;
+		}
+	}
+	
+	/*dash table*/
+	.dash_recent_top {overflow:hidden; padding:10px 0px;}
+	.dash_recent_table {
+		width:100%; 
+		border-top:1px solid @light-gray;
+		border-collapse: inherit !important;
+
+		th, td {
+			text-align:center; 
+			padding:10px; 
+			border-right:1px solid @light-gray;
+			font-size: 1rem;
+		}
+		th {
+			border-right:0;
+			color:@semi-dark-gray;
+		}
+		
+		td {
+			&:nth-child(1) {width:150px;}
+			&:nth-child(2) {width:170px;}
+			&:nth-child(3) {width:140px;}
+			&:nth-child(4) {width:200px;}
+			&:nth-child(5) {width:278px;}
+			&:last-child {border-right:0;}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.tagit_wrapper { position: relative }
+.box_placeholder { position: absolute; top: 5px; left: 10px; line-height: 2 }
+.wait_removed { text-decoration: line-through; opacity: 0.5 }
+
+
+.country_sub_title { font-weight: 700; font-size: 1.2rem }
+.country-off-description { display: none }
+.country-off-description p { font-size: 1.03rem }
+.set_country_wrap { display: none }
+.set_country_wrap .select2-selection__rendered { font-size: 1.03rem; color: #999 !important }
+.country_top_wrap { height: 85px; margin-bottom: 15px }
+.country_radio_group { margin-bottom: 3px }
+.country_radio_group label { font-size: 1.03rem; font-weight: normal; cursor: pointer }
+.country_select_description p { font-size: 1.13rem; color: #7F94A0; line-height: 30px; margin: 0 5px }

@@ -1,0 +1,304 @@
+#settings {
+  &.dns_modal {
+    .modal-body {
+      select.form-control {
+        width: 120px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      input.form-control {
+        width: 240px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      .domain_info {
+        line-height: 30px;
+      }
+
+      .addresses_lines {
+        width: 100%;
+        height: 160px;
+        padding: 10px;
+        border: #cdcdcd solid 1px;
+        resize: none;
+      }
+    }
+  }
+}
+
+#settings_nav_group_wrap {
+  width:100%;
+  padding-bottom: 20px;
+
+  #settings_nav_group {
+    display:inline-block;
+    width:896px;
+    overflow: hidden;
+    &.arrow_active {
+      border-left:3px solid @light-gray;
+      border-right:3px solid @light-gray;
+    }
+
+    #settings_nav {
+      display:table;
+      width:100%;
+
+      .btn-app {
+        display:table-cell;
+        width: 112px;
+        height:80px;
+        &:not(:last-child) {  border-right:0;  }
+        &:hover, &.active {background-color: @blue; color:@white;}
+
+        .fa {
+          margin-bottom:5px;
+          //font-size:1.5rem;
+        }
+
+        .glyphicon {
+          display:block;
+          font-size:1.7rem;
+          margin-bottom:5px;
+        }
+      }
+    }
+  }
+
+  .btn-arrow {
+    visibility: hidden;
+    min-width:42px;
+
+    &.active {
+      i.fa {
+        color: @blue;
+        cursor:pointer;
+      }
+    }
+
+    i.fa {
+      font-size:3.5rem;
+      color: @light-gray;
+    }
+  }
+}
+
+/*content*/
+.settings_content {
+  overflow: hidden;
+  position: relative;
+  width:892px;
+  margin:0 auto;
+
+  .title_text {
+    font-size: 1.9rem;
+  }
+  .sub_text {
+    height:auto;
+    padding:10px 0;
+    font-size:1rem;
+  }
+
+  .settings_content_main {
+    margin-bottom:10px;
+    margin-top: 15px;
+
+    input[type='text'] {width:200px;  display: inline-block;}
+
+    .settings_content_main_wrap, .settings_content_main_table {
+      background-color: @white;
+      border: 1px solid @light-gray;
+      margin-top:10px;
+      overflow: hidden;
+      padding:20px;
+      width:100%;
+      clear:both;
+      font-size:1.13rem;
+
+      .settings_content_main_title {
+        font-weight:bold;
+        font-size:1.2rem;
+      }
+
+      .settings_content_form_wrap {
+        .form-group {
+          input[type='text'] {width:280px;}
+          .btn {margin-left:8px;}
+          margin-bottom: 15px;
+        }
+
+        .tagit_wrapper {
+          height:230px;
+          border:1px solid @light-gray;
+          padding: 10px;
+        }
+        .tagit {
+          width:100%;
+          border:0;
+          background: transparent;
+          padding: 0;
+          margin: 0;
+          clear:both;
+        }
+        .tagit .tagit-new {display:none !important;}
+
+        .set_country_wrap {
+          margin-bottom: 10px
+        }
+      }
+    }
+
+    .settings_content_main_table {
+      display:table;
+
+      > * {
+        display:table-cell;
+        vertical-align: middle;
+      }
+
+      .settings_content_main_title {
+        width:60%;
+      }
+      .settings_content_description {
+        display: table-row;
+
+        p {
+          margin: 0;
+          margin-top: 5px;
+          font-size: 1.03rem;
+        }
+      }
+      .settings_content_main_value {
+        width:40%;
+        text-align:right;
+        .btn {
+          margin-left:3px;
+          margin-top:-3px;
+        }
+        .table {
+          font-size:1.1rem;
+          td {
+            text-align: center;
+            &:first-child {
+              font-weight:bold;
+              width:20%
+            }
+            &:nth-child(2) {width:20%;}
+            &:nth-child(3) {width:60%;}
+          }
+        }
+      }
+    }
+  }
+
+  &#settings_overview_ip {
+    input[type='text'] {width:150px;}
+  }
+
+  &#settings_dns {
+    #settings_dns_table_wrap {
+      margin-top:25px;
+
+      .dx-datagrid-rowsview {
+        tr {
+          //&:first-child {
+          &.active {
+            border:2px solid @blue;
+            border-left:0;
+            border-right:0;
+            font-weight: bold;
+            color: @blue;
+
+            input[type="text"] {
+              border:1px solid @blue;
+              font-weight: normal;
+              color:@gray;
+            }
+          }
+
+          td {
+            &:nth-child(3){
+              text-align: left !important;
+              padding-left:13px;
+
+              label {color:@light-gray;}
+              div, input[type='text'] {
+                width:180px;
+                display: inline-block;
+                height: 25px;
+                text-align: left;
+                padding: 6px 12px;
+                width:190px;
+                white-space:normal;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &#settings_ddos {
+    .settings_content_main_table {
+      .settings_content_main_value {
+        width:17%;
+        text-align: left;
+        input[type='text'] { width:100px; margin-right: 15px }
+      }
+    }
+  }
+
+  &#settings_delete {
+    #btn_delete {
+      width:100px;
+    }
+  }
+
+  &#settings_country_control {
+    .form-control {
+      width: 140px;
+    }
+
+    .custom_select {
+      width: 355px;
+    }
+
+    .set_option_list {
+      margin: 0;
+      padding: 0;
+
+      & li::before {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      & > li::before { content: '*' }
+
+      &> ul { padding-left: 10px }
+      &> ul > li::before { content: '-' }
+    }
+
+    .tagit {
+      .white {
+        background: @semi-light-gray !important;
+        color: @semi-dark-gray !important;
+
+        .tagit-close {
+          color: @semi-dark-gray !important;
+        }
+
+        .ui-icon{
+          background: url('../img/tag_black_close_01.png')no-repeat center !important;
+
+          &:hover {
+            background: url('../img/tag_black_close_02.png') no-repeat center !important;
+          }
+        }
+
+        .ui-icon-close:before {color:@semi-dark-gray;}
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+#header_bottom {
+    height: 5px;
+    padding: 0;
+}
+#header_bottom .content_center {
+    displa: none;
+}
+/*search box*/
+#site-list-search-box {
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+#site-list-search-box > .col-lg-3 {
+    padding-right: 0;
+}
+#site-list-search-box #input-search-text {
+    background: url('/assets/img/event/search_01.png') #fff 7px no-repeat;
+    background-size: 15px;
+    padding-left: 26px;
+}
+#mysites .panel-group .panel.panel-default {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+#mysites .panel-group ul {
+    padding-left: 0;
+    margin-bottom: 2px;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    background-color: #fff;
+}
+#mysites .panel-group li {
+    display: table-cell;
+    color: #7f94a0;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+#mysites .panel-group li:nth-child(1) {
+    width: 81px;
+    padding-left: 15px;
+}
+#mysites .panel-group li.domain-name {
+    width: 489px;
+    position: relative;
+}
+#mysites .panel-group li.add-website {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+}
+#mysites .panel-group li.add-website img {
+    padding: 12px 7px;
+}
+#mysites .panel-group li.domain-name .btn-mysite-recheck {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#mysites .panel-group .panel-heading {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+#mysites .panel-group .panel-heading li:nth-child(3) {
+    width: 409px;
+}
+#mysites .panel-group.add-website-panel li:nth-child(1),
+#mysites .panel-group.add-website-panel li:nth-child(3) {
+    width: 1px;
+    padding: 0px;
+}
+#mysites .panel-group .panel-body {
+    padding: 0px;
+    border: 0 !important;
+    /*status*/
+    /*paid plan*/
+    /*traffic*/
+}
+#mysites .panel-group .panel-body li.domain-status-img {
+    width: 33px;
+    padding-top: 1px;
+    padding-right: 6px;
+    text-align: center;
+}
+#mysites .panel-group .panel-body li.domain-status-text {
+    width: 160px;
+    text-align: left;
+    /*&.domain-status-protected {color: #2da2db;}
+            &.domain-status-bypass {color: #288dbf;}
+            &.domain-status-disconnected {color: #e74c3c;}
+            &.domain-status-deleting {color: #e74c3c;}
+            &.domain-status-pending {color: #7f94a0;}*/
+}
+#mysites .panel-group .panel-body li.domain-traffic,
+#mysites .panel-group .panel-body li.domain-status-pending-info {
+    font-size: 0.97rem;
+    width: 260px;
+}
+#mysites .panel-group .panel-body li.domain-traffic .btn_dnsinfo,
+#mysites .panel-group .panel-body li.domain-status-pending-info .btn_dnsinfo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#mysites .panel-group .panel-body li.li-options-wrap {
+    position: relative;
+    width: 34px;
+}
+#mysites .panel-group .panel-body li.li-options-wrap.go-to-settings {
+    padding-right: 10px;
+}
+#mysites .panel-group .panel-body li.li-options-wrap.go-to-report a:before {
+    position: absolute;
+    top: 15px;
+    color: #7c99a9;
+    font-size: 18px;
+}
+#mysites .panel-group .panel-body .label-domain-status img {
+    height: 11px;
+    margin-right: 1px;
+}
+#mysites .panel-group .panel-body .box-paidplan {
+    display: inline-block;
+    width: 100%;
+    height: 21px;
+    background: url('/assets/img/mysite/paid_plan.png') #fff no-repeat left 2px top;
+    padding-top: 1px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border: 1px solid #7f94a0;
+    color: #7f94a0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-align: center;
+}
+#mysites .panel-group .panel-body .domain-traffic {
+    width: 216px;
+    height: 21px;
+    border: 1px solid #cdcdcd;
+    /* Traffic 초과 시 */
+}
+#mysites .panel-group .panel-body .domain-traffic .progress-bar {
+    height: 21px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+#mysites .panel-group .panel-body .domain-traffic .progress-text {
+    width: 100%;
+    position: absolute;
+    font-size: 0.95rem;
+    color: #666;
+    padding: 1px 10px 0 10px;
+}
+#mysites .panel-group .panel-body .domain-traffic.domain-traffic-excess {
+    border: 1px solid #e74c3c;
+}
+#mysites .panel-group .panel-body .domain-traffic.domain-traffic-excess .progress-bar {
+    border: 1px solid #e74c3c;
+    background-color: #e74c3c;
+}
+#mysites .panel-group .panel-body .domain-traffic.domain-traffic-excess .progress-text {
+    color: #fff;
+}
+
+.none_site { padding: 10px; font-size: 16px; color: #7F94A0; text-align: center }
+.need_add_site { padding: 20px 0; font-size: 30px }
+.waiting_payment { width: 480px; !important }
