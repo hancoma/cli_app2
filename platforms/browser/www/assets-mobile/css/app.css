@@ -1,0 +1,44 @@
+/* Your app styles here */
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+  display: none;
+}
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+  display: none;
+}
+
+/* Login */
+.md .login-screen-title { font-weight: 700; font-size: 22px; color: #2196F3 }
+.login-screen-content { display: flex; flex-direction: column; padding: 30px; align-items: center; justify-content: center; }
+
+/* My Sites */
+.justify-center { justify-content: center }
+.vertical-center { align-items: center }
+
+/* Dashboard */
+.domain-status { font-weight: 700; color: #2196F3 }
+.md .block-total-data, .ios .block-total-data { margin: 0; margin-top: 10px; margin-bottom: 20px }
+.block-total-data { text-align: center }
+.total-data-list { margin: 0; margin-bottom: 10px }
+.total-data-list dt { font-weight: 700; font-size: 18px }
+.total-data-list dd { margin: 0 }
+.total-data-traffic { font-size: 20px; color: #888 }
+.total-data-visits { font-size: 20px; color: #0A6EDB }
+.total-data-attacks { font-size: 20px; color: #F44336 }
+
+/* 콘텐츠 하단 여백 */
+.page-content {
+    padding-bottom: 65px;
+}
+
+/* 상단 navbar 타이틀 가운데 정렬을 위한 스타일 오버라이딩 */
+.md .navbar .title {
+    margin: 0 auto;
+}
+.md .navbar .right {
+    margin-left: 0;
+}
+
+/* 안 읽은 알람 배경 */
+.md .bg-color-alarm {
+    background-color: #d4f3ff !important;
+}
