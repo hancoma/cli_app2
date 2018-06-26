@@ -1,0 +1,428 @@
+/*Page Loading*/
+/*#loading {
+	display:block;
+}*/
+/*Layout*/
+.content_wrapper {
+    padding: 20px 0 50px 0;
+}
+.datepicker_wrap {
+    padding-bottom: 30px;
+}
+.content_center {
+    position: relative;
+}
+#download_pdf,
+#download_excel {
+    width: 150px;
+}
+#dashboard {
+    /*TAB*/
+    /* Table hover color */
+    /*
+       * Title, Sub Text
+       */
+    /*
+       * Graph TEXT
+       */
+    /*OVERVIEW*/
+    /*DASH TABS*/
+    /* Map */
+    /*Attack IP Table*/
+    /*Attack Country Table*/
+    /*Visit Country Table*/
+    /* Pie Chart */
+    /*Accumulated Bandwidth*/
+    /*Traffic By Day*/
+    /*dash table*/
+}
+#dashboard .btn-hover {
+    cursor: pointer;
+}
+#dashboard li:not(.active) > [data-toggle="tab"] {
+    opacity: 0.5;
+}
+#dashboard .table-striped > tbody > tr.map_active,
+#dashboard .table-striped > tbody > tr:hover {
+    background-color: #cdcdcd !important;
+}
+#dashboard .title_text {
+    margin-bottom: 3px;
+}
+#dashboard text {
+    font-family: Roboto, NotoSansJapanese, FontAwesome !important;
+}
+#dashboard #overview_graph1 .dxc-val-axis:nth-child(2) text,
+#dashboard #overview_graph2 .dxc-val-axis:nth-child(2) text {
+    fill: #2da2db !important;
+}
+#dashboard #overview_graph1 .dxc-val-axis:nth-child(3) text,
+#dashboard #overview_graph2 .dxc-val-axis:nth-child(3) text {
+    fill: #e74c3c !important;
+}
+#dashboard #dash_overview {
+    margin-bottom: 30px;
+    /* Graph */
+}
+#dashboard #dash_overview .overview_nodata {
+    position: absolute;
+    left: 277px;
+    top: 135px;
+}
+#dashboard #dash_overview .nav-tabs {
+    width: 350px;
+}
+#dashboard #dash_overview .nav-tabs li,
+#dashboard #dash_overview .nav-tabs li a {
+    display: block;
+    height: 160px;
+    color: #666;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+}
+#dashboard #dash_overview .nav-tabs p:first-child {
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#dashboard #dash_overview .nav-tabs .inline_left {
+    width: 50%;
+}
+#dashboard #dash_overview .nav-tabs .inline_left .overview_num {
+    border-right: 1px solid #cdcdcd;
+}
+#dashboard #dash_overview .nav-tabs .inline_right {
+    width: 50%;
+}
+#dashboard #dash_overview .nav-tabs .overview_num {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+#dashboard #dash_overview .nav-tabs-custom .nav-tabs li {
+    border: 0 !important;
+}
+#dashboard #dash_overview .pie_graph_info table tr:hover,
+#dashboard #dash_overview .dash_map_info tbody tr:hover {
+    background: #cdcdcd !important;
+}
+#dashboard #dash_overview #overview_graph1,
+#dashboard #dash_overview #overview_graph2 {
+    position: relative;
+    width: 605px;
+    height: 300px;
+}
+#dashboard #dash_overview #overview_tab1:not(.active) > [data-toggle="tab"] {
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+}
+#dashboard #dash_overview #overview_tab2:not(.active) > [data-toggle="tab"] {
+    border-top: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+}
+#dashboard #dash_overview .tab-content {
+    width: 625px;
+    position: relative;
+}
+#dashboard #dash_tabs .nav-tabs li {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+}
+#dashboard #dash_tabs .nav-tabs li.active a {
+    font-weight: normal;
+}
+#dashboard #dash_tabs a {
+    color: #666;
+    font-size: 16px;
+    padding: 14px 15px;
+}
+#dashboard #dash_tabs .tab-content {
+    padding: 25px 19px 19px 19px;
+}
+#dashboard #dash_tabs .tab-content .tab-pane > div {
+    padding-bottom: 20px;
+}
+#dashboard #dash_tabs .tab-content .tab-pane > div:not(:first-child) > div {
+    border: 1px solid #cdcdcd;
+}
+#dashboard .dash_map {
+    overflow: hidden;
+    position: relative;
+}
+#dashboard .dxm-control-buttons {
+    stroke-width: 2px !important;
+}
+.dash_attack_ip_nodata,
+.dash_attack_country_nodata,
+.dash_visit_map_nodata {
+    position: absolute;
+    left: 270px;
+    top: 180px;
+}
+#dashboard .dash_map_vector {
+    width: 560px;
+    height: 350px;
+    float: left;
+}
+#dashboard .dash_map_info {
+    width: 380px;
+    height: 350px;
+    float: right;
+    border: 1px solid #cdcdcd;
+    border-left: 0;
+    overflow: hidden;
+}
+#dashboard .dash_map_info .dash_map_info_top {
+    height: 93px;
+    padding: 30px 10px 0 10px;
+}
+#dashboard .dash_map_info .sub_text {
+    text-align: center;
+    color: #e74c3c;
+    margin: 0;
+}
+#dashboard .dash_map_info .round_tabs {
+    width: 200px;
+}
+#dashboard .dash_map_info .round_tabs li {
+    float: left;
+    width: 50%;
+    padding-top: 6px;
+}
+#dashboard .dash_map_info table {
+    display: block;
+    overflow: hidden;
+    border-top: 1px solid #cdcdcd;
+}
+#dashboard .dash_map_info table tbody,
+#dashboard .dash_map_info table tbody tr {
+    display: block;
+}
+#dashboard .dash_map_info table td {
+    display: inline-block;
+    padding: 13px 8px !important;
+    border-top: 0 !important;
+}
+#dashboard .dash_map_info table td:nth-child(2) {
+    font-size: 1.1rem;
+}
+#dashboard .dash_map_info .dash_map_order_num {
+    font-size: 0.95rem;
+}
+#dashboard .dash_map_info .label {
+    position: relative;
+    top: -2px;
+    left: 3px;
+    width: 96px;
+}
+#dashboard .dash_map_info span[pre-add='true'],
+#dashboard .dash_map_info .btn_map_action[pre-add='true'] {
+    text-decoration: line-through;
+}
+#dashboard .dash_map_info .btn_map_action[pre-add='true']:hover {
+    text-decoration: none;
+}
+#dashboard #dash_attack_map .dash_map_info .round_tabs li.active {
+    background-color: #ec7063;
+}
+#dashboard #dash_visit_map .dash_map_info .round_tabs li.active {
+    background-color: #2da2db;
+    width: 100%;
+}
+#dashboard #dash_attack_ip_table td:first-child {
+    width: 20px;
+}
+#dashboard #dash_attack_ip_table td:nth-child(2) {
+    width: 254px;
+}
+#dashboard #dash_attack_country_table td:first-child {
+    width: 20px;
+}
+#dashboard #dash_attack_country_table td:nth-child(2) {
+    width: 254px;
+}
+#dashboard #dash_visit_map_table td:first-child {
+    width: 20px;
+}
+#dashboard #dash_visit_map_table td:nth-child(2) {
+    width: 254px;
+}
+#dashboard #dash_visit_map_table .visit_map_num {
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    padding-top: 4px;
+}
+#dashboard .btn_map_center {
+    display: inline-block;
+    margin-left: -55px;
+    margin-top: 10px;
+}
+#dashboard #dash_attack .pie_graph {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+}
+#dashboard .pie_graph_nodata {
+    position: absolute;
+    top: 160px;
+    left: 205px;
+}
+#dashboard .pie_graph_wrapper {
+    overflow: hidden;
+}
+#dashboard #dash_purpose div:not(:last-child) {
+    border-bottom: 0px !important;
+}
+#dashboard #dash_purpose #dash_purpose_graph {
+    width: 460px;
+    height: 300px;
+    padding: 30px 10px;
+}
+#dashboard #dash_urls div:not(:last-child) {
+    border-bottom: 0px !important;
+}
+#dashboard #dash_urls .table {
+    width: 459px;
+}
+#dashboard #dash_urls #dash_urls_graph {
+    width: 460px;
+    height: 300px;
+    padding: 30px 10px;
+}
+#dashboard .pie_graph_info {
+    width: 459px;
+    border-top: 0 !important;
+}
+#dashboard .pie_graph_info table {
+    overflow: hidden;
+    font-size: 1.1rem;
+    display: block;
+}
+#dashboard .pie_graph_info table tbody,
+#dashboard .pie_graph_info table tr {
+    display: block;
+}
+#dashboard .pie_graph_info table td {
+    padding: 8px;
+    border-top: 0;
+}
+#dashboard .pie_graph_info table td svg {
+    display: block;
+}
+#dashboard .pie_graph_info table td:nth-child(1) {
+    width: 47px;
+}
+#dashboard .pie_graph_info table td:nth-child(2) {
+    overflow: hidden;
+    width: 100%;
+    max-width: 370px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#dashboard .pie_graph_info table td:nth-child(3) {
+    width: 96px;
+}
+#dashboard .pie_graph_info table td:nth-child(4) {
+    width: 27px;
+}
+#dashboard .pie_graph_info .btn_extra_url {
+    width: 80px;
+}
+#dash_bandwidth {
+    position: relative;
+}
+#dash_bandwidth_graph {
+    width: 940px;
+    height: 320px;
+    padding: 10px;
+}
+#dash_bandwidth_graph > svg {
+    margin: 0 auto;
+}
+.bandwidth_nodata {
+    position: absolute;
+    top: 155px;
+    left: 460px;
+}
+#dashboard #dash_traffic_day {
+    position: relative;
+}
+#dashboard #dash_traffic_day #dash_traffic_day_graph {
+    width: 460px;
+    height: 320px;
+    padding: 10px;
+}
+#dashboard #dash_traffic_day .traffic_day_nodata {
+    position: absolute;
+    left: 203px;
+    top: 155px;
+}
+#dashboard #dash_throughput {
+    position: relative;
+}
+#dashboard #dash_throughput #dash_throughput_graph {
+    width: 460px;
+    height: 320px;
+    padding: 10px;
+}
+#dashboard #dash_throughput .throughput_nodata {
+    position: absolute;
+    left: 203px;
+    top: 155px;
+}
+#dashboard .dash_recent_top {
+    overflow: hidden;
+    padding: 10px 0px;
+}
+#dashboard .dash_recent_table {
+    width: 100%;
+    border-top: 1px solid #cdcdcd;
+    border-collapse: inherit !important;
+}
+#dashboard .dash_recent_table th,
+#dashboard .dash_recent_table td {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #cdcdcd;
+    font-size: 1rem;
+}
+#dashboard .dash_recent_table th {
+    border-right: 0;
+    color: #666;
+}
+#dashboard .dash_recent_table td:nth-child(1) {
+    width: 150px;
+}
+#dashboard .dash_recent_table td:nth-child(2) {
+    width: 170px;
+}
+#dashboard .dash_recent_table td:nth-child(3) {
+    width: 140px;
+}
+#dashboard .dash_recent_table td:nth-child(4) {
+    width: 200px;
+}
+#dashboard .dash_recent_table td:nth-child(5) {
+    overflow: hidden;
+    width: 278px;
+    max-width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#dashboard .dash_recent_table td:last-child {
+    border-right: 0;
+}
+
+.graph_wrap { position: relative; overflow: hidden }
+.dash_recent_wrapper { position: relative }
+.data_loading { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: ''; background: url(/assets/img/cloud_loading.gif) no-repeat center center rgba(255, 255, 255, 0.8); z-index: 100 }
+.data_loading.hide_loading { display: none }
+.btn_map_action { width: 80px }
+.option_wrap .btn { width: 40px }

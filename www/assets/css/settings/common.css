@@ -1,0 +1,247 @@
+#settings.dns_modal .modal-body select.form-control {
+    width: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#settings.dns_modal .modal-body input.form-control {
+    width: 240px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#settings.dns_modal .modal-body .domain_info {
+    line-height: 30px;
+}
+#settings.dns_modal .modal-body .addresses_lines {
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    border: #cdcdcd solid 1px;
+    resize: none;
+}
+#settings_nav_group_wrap {
+    width: 100%;
+    padding-bottom: 20px;
+}
+#settings_nav_group_wrap #settings_nav_group {
+    display: inline-block;
+    width: 896px;
+    overflow: hidden;
+}
+#settings_nav_group_wrap #settings_nav_group.arrow_active {
+    border-left: 3px solid #cdcdcd;
+    border-right: 3px solid #cdcdcd;
+}
+#settings_nav_group_wrap #settings_nav_group #settings_nav {
+    display: table;
+    width: 100%;
+}
+#settings_nav_group_wrap #settings_nav_group #settings_nav .btn-app {
+    display: table-cell;
+    width: 112px;
+    height: 80px;
+}
+#settings_nav_group_wrap #settings_nav_group #settings_nav .btn-app:not(:last-child) {
+    border-right: 0;
+}
+#settings_nav_group_wrap #settings_nav_group #settings_nav .btn-app:hover,
+#settings_nav_group_wrap #settings_nav_group #settings_nav .btn-app.active {
+    background-color: #2da2db;
+    color: #fff;
+}
+#settings_nav_group_wrap #settings_nav_group #settings_nav .btn-app .fa {
+    margin-bottom: 5px;
+}
+#settings_nav_group_wrap #settings_nav_group #settings_nav .btn-app .glyphicon {
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+#settings_nav_group_wrap .btn-arrow {
+    visibility: hidden;
+    min-width: 42px;
+}
+#settings_nav_group_wrap .btn-arrow.active i.fa {
+    color: #2da2db;
+    cursor: pointer;
+}
+#settings_nav_group_wrap .btn-arrow i.fa {
+    font-size: 3.5rem;
+    color: #cdcdcd;
+}
+/*content*/
+.settings_content {
+    overflow: hidden;
+    position: relative;
+    width: 892px;
+    margin: 0 auto;
+}
+.settings_content .title_text {
+    font-size: 1.9rem;
+}
+.settings_content .sub_text {
+    height: auto;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+.settings_content .settings_content_main {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.settings_content .settings_content_main input[type="text"] {
+    display: inline-block;
+}
+.settings_content .settings_content_main .settings_content_main_wrap,
+.settings_content .settings_content_main .settings_content_main_table {
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    clear: both;
+    font-size: 1.13rem;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_main_title,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_main_title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .form-group,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .form-group {
+    margin-bottom: 15px;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .form-group input[type='text'],
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .form-group input[type='text'] {
+    width: 280px;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .form-group .btn,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .form-group .btn {
+    margin-left: 8px;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .tagit_wrapper,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .tagit_wrapper {
+    overflow-y: scroll;
+    height: 230px;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    word-break: break-all;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .tagit,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .tagit {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .tagit .tagit-new,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .tagit .tagit-new {
+    display: none !important;
+}
+.settings_content .settings_content_main .settings_content_main_wrap .settings_content_form_wrap .set_country_wrap,
+.settings_content .settings_content_main .settings_content_main_table .settings_content_form_wrap .set_country_wrap {
+    margin-bottom: 10px;
+}
+.settings_content .settings_content_main .settings_content_main_table {
+    display: table;
+}
+.settings_content .settings_content_main .settings_content_main_table > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+.settings_content .settings_content_main .settings_content_main_table .settings_content_main_title {
+    width: 60%;
+    vertical-align: top;
+}
+.settings_content .settings_content_main .settings_content_main_table .settings_content_description {
+    display: table-row;
+}
+.settings_content .settings_content_main .settings_content_main_table .settings_content_description p {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 1.03rem;
+}
+.settings_content .settings_content_main .settings_content_main_table .settings_content_main_value {
+    width: 40%;
+    text-align: right;
+}
+.settings_content#settings_dns #settings_dns_table_wrap {
+    margin-top: 25px;
+}
+.settings_content#settings_dns #settings_dns_table_wrap .dx-datagrid-rowsview tr.active {
+    border: 2px solid #2da2db;
+    border-left: 0;
+    border-right: 0;
+    font-weight: bold;
+    color: #2da2db;
+}
+.settings_content#settings_dns #settings_dns_table_wrap .dx-datagrid-rowsview tr.active input[type="text"] {
+    border: 1px solid #2da2db;
+    font-weight: normal;
+    color: #999;
+}
+.settings_content#settings_dns #settings_dns_table_wrap .dx-datagrid-rowsview tr td:nth-child(3) {
+    text-align: left !important;
+    padding-left: 13px;
+}
+.settings_content#settings_dns #settings_dns_table_wrap .dx-datagrid-rowsview tr td:nth-child(3) label {
+    color: #cdcdcd;
+}
+.settings_content#settings_dns #settings_dns_table_wrap .dx-datagrid-rowsview tr td:nth-child(3) div,
+.settings_content#settings_dns #settings_dns_table_wrap .dx-datagrid-rowsview tr td:nth-child(3) input[type='text'] {
+    width: 180px;
+    display: inline-block;
+    height: 25px;
+    text-align: left;
+    padding: 6px 12px;
+    width: 190px;
+    white-space: normal;
+    font-size: 1rem;
+}
+.settings_content#settings_ddos .settings_content_main_table .settings_content_main_value input[type='text'] {
+    width: 100px;
+    margin-right: 15px;
+}
+.settings_content#settings_delete #btn_delete {
+    width: 100px;
+}
+.settings_content#settings_country_control .form-control {
+    width: 140px;
+}
+.settings_content#settings_country_control .custom_select {
+    width: 355px;
+}
+.settings_content#settings_country_control .set_option_list {
+    margin: 0;
+    padding: 0;
+}
+.settings_content#settings_country_control .set_option_list li::before {
+    display: inline-block;
+    margin-right: 5px;
+}
+.settings_content#settings_country_control .set_option_list > li::before {
+    content: '*';
+}
+.settings_content#settings_country_control .set_option_list > ul {
+    padding-left: 10px;
+}
+.settings_content#settings_country_control .set_option_list > ul > li::before {
+    content: '-';
+}
+.settings_content#settings_country_control .tagit .white {
+    background: #ebebeb !important;
+    color: #666 !important;
+}
+.settings_content#settings_country_control .tagit .white .tagit-close {
+    color: #666 !important;
+}
+.settings_content#settings_country_control .tagit .white .ui-icon {
+    background: url('/assets/img/tag_black_close_01.png') no-repeat center !important;
+}
+.settings_content#settings_country_control .tagit .white .ui-icon:hover {
+    background: url('/assets/img/tag_black_close_02.png') no-repeat center !important;
+}
+.settings_content#settings_country_control .tagit .white .ui-icon-close:before {
+    color: #666;
+}

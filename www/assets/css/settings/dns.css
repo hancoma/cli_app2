@@ -1,0 +1,26 @@
+.record_table { width: 100%; border-collapse: collapse; border-spacing: 0 }
+.record_table caption { display: none }
+.column_type { width: 80px }
+.column_name { }
+.column_value { width: 320px }
+.column_status { width: 80px }
+.column_delete { width: 100px }
+.header_row { height: 30px; background-color: #F5F5F5; border: #CDCDCD solid 1px }
+.header_row th { font-weight: normal; text-align: center; border-right: #CDCDCD solid 1px }
+.record_row { height: 40px; text-align: center; border: #CDCDCD solid 1px }
+.record_table .record_row:nth-child(odd) { background: #FFF; border-top: #EBEBEB solid 1px }
+.record_table .record_row:nth-child(even) { background: #F5F5F5; border-top: #FFF solid 1px }
+.record_row td { padding: 5px 10px; word-break: break-all }
+.data_value { text-align: left }
+.value_list { margin: 0; padding: 0; list-style-type: none; clear: both }
+.value_item { float: left; margin-right: 6px }
+.point_value { font-weight: bold }
+.point_label { font-weight: bold; color: #CDCDCD }
+.delete_image { pointer-events: none }
+
+.close_button { position: absolute; top: 10px; right: 10px }
+.modal_description { margin: 10px 0 20px 0; font-size: 1.2rem; text-align: center }
+.modal_button_list { width: 100%; margin: 0 auto; padding: 0; text-align: center; list-style-type: none }
+.item_button { display: inline-block; margin: 0 10px }
+
+.value_input { width: 180px; margin: 5px 0 }

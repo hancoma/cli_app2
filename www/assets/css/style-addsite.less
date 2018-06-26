@@ -1,0 +1,472 @@
+#addsite-wrap {
+  .title_text {
+    font-size: 2.5rem;
+    padding: 35px 0 10px 0;
+    text-align: center;
+    color: @blue;
+  }
+  .sub_text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+
+#btn-next {
+  width:150px;
+  margin: 25px auto 0 auto;
+}
+
+.between_space {
+  padding: 0 8px;
+}
+
+/*Add site 1*/
+#addsite1 {
+  margin: 0 auto;
+  padding-top:60px;
+
+  #addsite1_img {
+    width:114px;
+    height:89px;
+    background:url(../img/addsite/addsite_icon.png) no-repeat;
+    margin:0 auto;
+  }
+
+  .form-group .control-label { right:5px; color: #7F93A0;}
+  #addsite_url_wrap {width:500px; margin:0 auto;}
+  #addsite_url {
+    height: 50px;
+    padding: 5px 25px 5px 10px;
+    font-size: 1.2rem;
+  }
+  #addsite_url_wrap i {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-right: 2px;
+  }
+}
+
+
+#addsite-progress-bar {
+  .progress {
+    width:80%;
+    margin:0 auto;
+    .border-radius(0);
+    height: 15px;
+
+    .progress-bar {
+      background-color: @dark-blue;
+      .border-radius(0);
+    }
+  }
+
+  #addsite-progress-text {
+    ul {
+      width:100%;
+      margin:0;
+      padding:0;
+      margin-top:15px;
+      display: table;
+
+      li {
+        display:table-cell;
+        width:20%;
+        text-align: center;
+
+        &.pre, &.active {color:@blue;}
+        &.active {font-weight:bold;}
+      }
+    }
+  }
+}
+
+/*region*/
+#addsite_region {
+
+  #choose-idc-list-wrap {
+    #choose-idc-list-top {
+      display:table;
+      width:100%;
+      font-size:1.2rem;
+      background-color: @white;
+      padding:10px 25px;
+      border: 1px solid @gray-blue;
+
+      #check-ip {
+        display:table-cell;
+        #domainIPs {display:inline-block; width:120px; margin-right:5px;}
+        #btn-change-ip {margin-top:-3px;}
+      }
+
+      #text-choose-idc {
+        display: table-cell;
+        text-align: right;
+        font-weight:bold;
+      }
+    }
+
+    #choose-idc-list-bottom {
+      background-color : @white;
+      border: 1px solid @gray-blue;
+      border-top: 0;
+      height: 440px;
+
+      #choose-idc-list {
+        width:25%;
+        border-right:1px solid @gray-blue;
+        font-size: 1.1rem;
+        height:100%;
+        position:relative;
+        overflow: hidden;
+
+        ul {
+          margin:0;
+          padding:0;
+          height:100%;
+
+          li {
+            background-color: @white-gray;
+            color: @gray-blue;
+            padding:8px 10px;
+            border-bottom:1px solid rgba(127, 148, 160, 0.5);
+
+            &.active {
+              &:not(.group-country){
+                &:not(.selected){
+                  background-color: @white;
+                  cursor:pointer;
+                  font-weight:bold;
+                }
+              }
+            }
+            &.selected {
+              background-color: @white;
+              color: @blue;
+              font-weight:bold;
+              cursor:pointer;
+
+              i.fa-check {
+                color: @blue;
+                float: right;
+                margin-top: 3px;
+              }
+            }
+            &.group-country {
+              background-color: @gray-blue;
+              color:@white;
+              font-size:1rem;
+              padding: 3px 10px;
+            }
+          }
+        }
+      }
+      #choose-idc-map {
+        width:75%;
+        position: relative;
+
+        #choose-idc-map-img {
+          width:700px;
+          height:348px;
+          margin:40px auto 0 auto;
+          background: url('../img/addsite/world_map_light_gray.png') no-repeat;
+          background-size:contain;
+        }
+
+        #choose-idc-map-pin {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+
+          .map-pin {
+            position: absolute;
+            width:10px;
+            height:10px;
+            border-radius: 10px;
+            border:2px solid @gray;
+            background-color: @white;
+            cursor: pointer;
+
+            &.active, &.selected {
+              border-width:3px;
+            }
+
+            &.active {
+              width:12px;
+              height:12px;
+              border-color: @semi-dark-gray;
+            }
+
+            &.selected {
+              width:15px;
+              height:15px;
+              background-color: @dark-blue;
+              border-color: @light-blue;
+              z-index:2;
+            }
+          }
+
+          /* Region 위치 지정 */
+          #idc-new-jersey { left: 24%; top: 33%;}
+          #idc-oregon { left: 10.5%; top: 30%;}
+          #idc-california { left: 9.3%; top: 37%;}
+          #idc-illinois { left: 19.5%; top: 34%;}
+          #idc-amsterdam {left:46.5%; top:26%;}
+          #idc-dublin {left: 43.2%; top:24%;}
+          #idc-seoul {right:17%; top:36.5%;}
+          #idc-tokyo {right:12.4%; top:37.5%;}
+          #idc-nagano {right:13.6%; top:36%;}
+          #idc-hong-kong {right:19.5%; top:45.5%;}
+          #idc-singapore {right:22%; top:57.5%;}
+          #idc-ho-chi-minh {right:20.7%; top:52.5%;}
+          #idc-binh-duong {right:21.5%; top:50.9%;}
+        }
+      }
+    }
+  }
+}
+
+/*SSL Mode*/
+#addsite_ssl {
+
+  .choose-idc-ssl-using-answer, .choose-idc-ssl-mode-answer {
+    width: 47%;
+    border:1px solid @gray-blue;
+    padding:15px;
+    margin-bottom:0;
+    cursor: pointer;
+
+    //선택 되었을 때
+    &.selected {
+      color: @blue;
+      border-color: @blue;
+    }
+
+    .radio {
+      label {
+        position: absolute;
+        &::after {
+          margin-top: -1px;
+        }
+      }
+    }
+  }
+
+  #choose-idc-ssl-mode-wrap {
+    background-color: @white;
+    border: 1px solid @gray-blue;
+    padding:15px 25px;
+
+    #choose-idc-ssl-using {
+      font-size: 1.2rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+
+      #choose-idc-ssl-using-answer-wrap {
+        margin-top:20px;
+
+        .choose-idc-ssl-using-answer {
+          background-color: @white-gray;
+
+          //선택 되었을 때
+          &.selected {
+            //yes 선택 시
+            &[for='choose-ssl-using-yes']{
+              border-color: @blue;
+              border-bottom-color: @white-gray;
+            }
+          }
+
+        }
+      }
+    }
+
+    #choose-idc-ssl-mode{
+      display:none;
+      position: relative;
+      overflow:hidden;
+      z-index:1;
+      top:-1px;
+      background-color: @white-gray;
+      padding: 25px;
+      border: 1px solid @blue;
+
+      #choose-idc-ssl-mode-answer-wrap {
+        margin-top:25px;
+        .choose-idc-ssl-mode-answer {
+          background-color: @white;
+
+          //선택 되었을 때
+          &.selected {
+            color: @gray-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*SSL Manual*/
+#addsite_ssl_manual {
+  #addsite_ssl_manual_txt_list {
+    table {
+      width:100%;
+      color: @gray-blue;
+      text-align: center;
+      border: 1px solid @light-gray;
+
+      th, td {padding:8px 0;}
+      th {
+        background-color: @gray-blue;
+        text-align: center;
+        color: @white;
+        border-left:1px solid @light-gray;
+        &:first-child {
+          border-left:0;
+        }
+      }
+      td {
+        background-color: @white;
+        border-top:1px solid @light-gray;
+        border-left: 1px solid @light-gray;
+
+        &:first-child {
+          width:10%;
+          border-left:0;
+        }
+        &:nth-child(2) {width:30%;}
+        &:nth-child(3) {width:60%;}
+      }
+    }
+  }
+
+  #addsite_ssl_manual_btn_wrap {
+    padding-top:40px;
+    .btn {
+      display:block;
+      width:40%;
+      margin: 0 auto;
+      margin-top:15px;
+    }
+  }
+}
+
+/*DNS Info*/
+#addsite_dnsinfo{
+  #addsite_reg_info {
+    width:100%;
+    margin-bottom:30px;
+    text-align: center;
+    border:1px solid @light-gray;
+
+    .nav-tabs{
+      li {
+        width:50%;
+      }
+    }
+
+    .tab-content {
+      .reg_info {
+        padding:15px;
+        font-size:1.1rem;
+        overflow:hidden;
+
+        & > p {
+          padding: 8px 0 15px 0;
+        }
+      }
+
+      .reg_info_list {
+        display: table;
+        width: 90%;
+        margin: 0 auto;
+        padding-top:10px;
+
+        ul, .reg_info_list_arrow {display : table-cell;}
+
+        > ul {
+          padding-left: 0;
+          width:45%;
+          border: 1px solid @white;
+          background-color: @semi-light-blue;
+
+          > li {
+            padding: 8px;
+            vertical-align: middle;
+            border-top:1px solid @white;
+
+            &.reg_info_table_li {
+              padding:0 !important;
+              .reg_info_table {
+                width:100%; height:30px;
+                td {
+                  padding:8px 0;
+                  border-right:1px solid @white;
+
+                  &:nth-child(1) {width:20%;}
+                  &:nth-child(2) {width:20%;}
+                  &:nth-child(3) {width:60%;}
+                }
+              }
+            }
+          }
+
+          &.reg_info_list_current {
+            li {
+              &:first-child {
+                background-color: @gray-blue;
+                color: @white;
+              }
+            }
+          }
+
+          &.reg_info_list_change {
+            li {
+              &:first-child {
+                background-color: @dark-blue;
+                color: @white;
+              }
+            }
+          }
+        }
+
+        .reg_info_list_arrow {
+          vertical-align: middle;
+          width:10%;
+          font-size:30px;
+          text-align:center;
+          color:@gray-blue;
+          margin-top:65px;
+        }
+      }
+
+      .reg_info_comment {
+        width:90%;
+        margin:0 auto;
+        color:@gray-blue;
+        line-height:15px;
+        text-align:left;
+        padding-left:0;
+        padding-top:30px;
+
+        li {
+          padding:5px 0;
+          line-height : 1.4rem;
+          i {
+            font-size:0.4rem;
+            padding-right:5px;
+          }
+        }
+      }
+    }
+  }
+
+  #btn-done {
+    display: block;
+    width:20%;
+    margin:0 auto;
+  }
+}
